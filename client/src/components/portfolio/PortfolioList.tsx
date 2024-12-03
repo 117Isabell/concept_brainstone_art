@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioCard from "./portfolioCard";
+import PortfolioCard from "./PortfolioCard";
 
 const PortfolioList: React.FC = () => {
     const projects = [

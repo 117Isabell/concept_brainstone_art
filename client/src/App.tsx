@@ -1,5 +1,5 @@
 import Contact from "./components/homepage/contact.tsx";
-import PortfolioList from "./components/portfolio/portfolioList.tsx";
+import PortfolioList from "./components/portfolio/PortfolioList.tsx";
 
 export default function App() {
   return (
