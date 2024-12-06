@@ -1,3 +1,6 @@
-export { default as PurpleShape } from "./PurpleShape";
-export { default as YellowShape } from "./YellowShape";
-export { default as BlueShape } from "./BlueShape";
+import PurpleShape from "./PurpleShape.tsx";
+import YellowShape from "./YellowShape.tsx";
+import BlueShape from "./BlueShape.tsx";
+import GreenShape from "./GreenShape.tsx";
+
+export { PurpleShape, YellowShape, BlueShape, GreenShape };
