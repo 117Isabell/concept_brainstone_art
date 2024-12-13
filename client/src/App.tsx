@@ -5,6 +5,7 @@ import {
   BlueShape,
   GreenShape,
 } from "./components/homepage/AnimatedShapes";
+import PortfolioList from "./components/portfolio/PortfolioList.tsx";
 export default function App() {
   return (
     <div className="relative h-screen w-full bg-white overflow-hidden p-4">
@@ -14,6 +15,7 @@ export default function App() {
       <BlueShape />
       <GreenShape />
       <SocialIcons />
+      <PortfolioList />
     </div>
   );
 }
