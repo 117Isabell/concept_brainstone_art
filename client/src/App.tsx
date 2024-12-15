@@ -11,7 +11,7 @@ import PortfolioList from "./components/portfolio/PortfolioList";
 
 export default function App() {
   return (
-    <div>
+    <div className="bg-white min-h-screen flex flex-col items-center">
       <div className="relative h-screen w-full bg-white overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <PurpleShape className="absolute -rotate-[45deg] top-[8%] left-[2%] w-[50vw] h-[50vh] transform scale-150 z-10" />
@@ -21,7 +21,11 @@ export default function App() {
           <BlueShape className="absolute bottom-[10%] right-[20%] w-[35vw] h-[35vh] transform scale-[0]" />
         </div>
       </div>
-      <Portfolio />
+
+      <div className="w-full">
+        <Portfolio />
+      </div>
+
       <div>
         <PortfolioCard
           project={{
