@@ -1,8 +1,10 @@
 import { Facebook, Twitter, Send } from "lucide-react";
 
-export function SocialIcons() {
+export function SocialIcons({ className = "" }) {
   return (
-    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-4">
+    <div
+      className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-4 ${className} rotate-3`}
+    >
       <a
         href="#"
         className="p-2 bg-black rounded-full text-white hover:bg-gray-800 transition-colors"

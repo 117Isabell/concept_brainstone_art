@@ -1,14 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import YellowSvg from "../../../assets/homepage/yellow_shape.svg";
 
-const YellowShape = () => (
+const YellowShape = ({ className = "" }) => (
   <motion.div
-    className="absolute top-10 right-10 w-64 h-40 bg-yellow-400"
-    animate={{ y: [-5, 5, -5], rotate: [-2, 2, -2] }}
+    className={`absolute ${className}`}
+    animate={{ y: [-5, 5, -5] }}
     transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-    style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 20% 100%)" }}
-  />
+  >
+    <img
+      src={YellowSvg}
+      alt="Yellow shape"
+      style={{ width: "60%", height: "60%", objectFit: "contain" }}
+    />
+  </motion.div>
 );
 
 export default YellowShape;
