@@ -3,15 +3,19 @@
 import { motion } from "framer-motion";
 import GreenSvg from "../../../assets/homepage/green_shape.svg";
 
-const GreenShape = ({ className = "" }) => (
+interface GreenShapeProps {
+  className?: string;
+  onClick?: () => void;
+}
+
+const GreenShape = ({ className = "", onClick }: GreenShapeProps) => (
   <motion.div
     className={`absolute ${className}`}
-    animate={
-      {
-        // rotate: [0, 2, 0],
-        // x: [-10, 10, -10],
-      }
-    }
+    onClick={onClick}
+    animate={{
+      rotate: [0, 5, 0],
+      scale: [1, 1.05, 1],
+    }}
     transition={{
       duration: 6,
       repeat: Infinity,
@@ -21,7 +25,7 @@ const GreenShape = ({ className = "" }) => (
     <img
       src={GreenSvg}
       alt="Green shape"
-      style={{ width: "60%", height: "40%", objectFit: "contain" }}
+      className="w-full h-full object-contain"
     />
   </motion.div>
 );
