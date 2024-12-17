@@ -2,13 +2,19 @@
 
 import { motion } from "framer-motion";
 import GreenSvg from "../../../assets/homepage/green_shape.svg";
+import { ReactNode } from "react";
 
 interface GreenShapeProps {
   className?: string;
+  children?: ReactNode;
   onClick?: () => void;
 }
 
-const GreenShape = ({ className = "", onClick }: GreenShapeProps) => (
+const GreenShape: React.FC<GreenShapeProps> = ({
+  className = "",
+  children,
+  onClick,
+}) => (
   <motion.div
     className={`absolute ${className}`}
     onClick={onClick}
@@ -25,8 +31,9 @@ const GreenShape = ({ className = "", onClick }: GreenShapeProps) => (
     <img
       src={GreenSvg}
       alt="Green shape"
-      className="w-full h-full object-contain"
+      style={{ width: "50%", height: "25%", objectFit: "contain" }}
     />
+    {children}
   </motion.div>
 );
 

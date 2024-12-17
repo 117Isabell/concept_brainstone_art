@@ -19,7 +19,7 @@ const PurpleShape = ({ className = "" }) => (
     <img
       src={PurpleSvg}
       alt="Purple shape"
-      style={{ width: "80%", height: "60%", objectFit: "contain" }}
+      style={{ width: "30%", height: "30%", objectFit: "contain" }}
     />
   </motion.div>
 );
