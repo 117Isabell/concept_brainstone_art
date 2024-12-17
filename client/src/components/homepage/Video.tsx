@@ -1,19 +1,12 @@
+import black from "../../assets/homepage/black.svg";
+
 const YouTubeVideo = () => {
   return (
     <div className="relative max-w-3xl mx-auto p-4">
-      {/* Speech bubble with Russian text */}
-      <div
-        className="absolute left-2 bg-black text-white p-4 rounded-3xl transform -rotate-2 z-10 "
-        style={{
-          transform: "scaleY(.6) rotate(-6deg)",
-          borderTopLeftRadius: "20px",
-          borderTopRightRadius: "24px",
-          borderBottomLeftRadius: "20px",
-          borderBottomRightRadius: "28px",
-          width: "396px",
-        }}
-      >
-        <p className="text-lg sm:text-xl font-medium leading-tight">
+      {/* Speech bubble with text */}
+      <div className="absolute left-0 top-0 z-10">
+        <img src={black} alt="black" className="w-[300px]" />
+        <p className="absolute top-1/2 left-1/2 rotate-[-10deg] transform -translate-x-1/2 -translate-y-1/2 text-white text-lg sm:text-xl font-medium leading-tight whitespace-nowrap">
           Magic Starts Here!
         </p>
       </div>
