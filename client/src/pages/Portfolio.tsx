@@ -3,7 +3,7 @@ import PortfolioList from "../components/portfolio/PortfolioList";
 
 export default function Portfolio() {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center">
+    <div>
       <PortfolioCard
         project={{
           title: "Example Project",
